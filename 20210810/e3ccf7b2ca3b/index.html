@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>FLS SDF2021 培训02期 第二课 | 王心淳的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="信息学" />
+    
+    <meta name="description" content="上一节课是复习课, 今天信息课正式步入正轨。主要内容：  老师讲了。。。。。 老师讲了。。。。 老师讲了。。。 老师讲了。。。  Problem-A  2-n之间的所有质数123456789101112131415161718192021222324252627282930313233343536373839404142434445464748&#x2F;&#x2F;题目描述输入一个整数n（n&lt;&#x3D;10000)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FLS SDF2021 培训02期 第二课">
+<meta property="og:url" content="http://xinchun.wang/20210810/e3ccf7b2ca3b/index.html">
+<meta property="og:site_name" content="王心淳的博客">
+<meta property="og:description" content="上一节课是复习课, 今天信息课正式步入正轨。主要内容：  老师讲了。。。。。 老师讲了。。。。 老师讲了。。。 老师讲了。。。  Problem-A  2-n之间的所有质数123456789101112131415161718192021222324252627282930313233343536373839404142434445464748&#x2F;&#x2F;题目描述输入一个整数n（n&lt;&#x3D;10000)">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://xinchun.wang/images/0811.png">
+<meta property="article:published_time" content="2021-08-10T23:59:59.000Z">
+<meta property="article:modified_time" content="2021-08-11T08:12:31.069Z">
+<meta property="article:author" content="XinChun">
+<meta property="article:tag" content="信息学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://xinchun.wang/images/0811.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">记录学习历程的点点滴滴</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8C%96%E5%AD%A6/">化学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8E%86%E5%8F%B2/">历史</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%9C%B0%E7%90%86/">地理</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E6%95%B0%E5%AD%A6/">数学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E7%89%A9%E7%90%86/">物理</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E8%8B%B1%E8%AF%AD/">英语</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E8%AF%AD%E6%96%87/">语文</a></li></ul></li></ul>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-info-0810" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        FLS SDF2021 培训02期 第二课
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/20210810/e3ccf7b2ca3b/" class="article-date">
+       <time datetime="2021-08-10T23:59:59.000Z" itemprop="datePublished">2021-08-10</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/20210810/e3ccf7b2ca3b/" class="article-date">
+     <time datetime="2021-08-11T08:12:31.069Z" itemprop="dateModified">2021-08-11</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6/" rel="tag">信息学</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <p><img src="/images/0811.png" alt=" "></p>
+<p>上一节课是复习课, 今天信息课正式步入正轨。<br>主要内容：</p>
+<ol>
+<li>老师讲了。。。。。</li>
+<li>老师讲了。。。。</li>
+<li>老师讲了。。。</li>
+<li>老师讲了。。。</li>
+</ol>
+<h2 id="Problem-A-2-n之间的所有质数"><a href="#Problem-A-2-n之间的所有质数" class="headerlink" title="Problem-A  2-n之间的所有质数"></a>Problem-A  2-n之间的所有质数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">输入一个整数n（n&lt;=<span class="number">10000</span>)，输出n范围内所有的质数，每<span class="number">5</span>个一行。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">一个整数<span class="built_in">n</span>(n&lt;=<span class="number">10000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">输出<span class="number">2</span>-n之间所有的质数，每行<span class="number">5</span>个质数，每个数后面有一个空格。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">15</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">5</span> <span class="number">7</span> <span class="number">11</span></span><br><span class="line"><span class="number">13</span> </span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line">格式说明：一行如果满<span class="number">5</span>个，则这一行结束后有回车，且这一行的最后一个数后面没有空格。</span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> n,sam=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">g</span><span class="params">(<span class="keyword">int</span> n)</span>   <span class="comment">// 建议函数取名有意义, 如 bool isPrime(int n);</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i*i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)   <span class="comment">// 建议使用花括号, 使代码更清晰</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">g</span>(i))</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;i;</span><br><span class="line">            sam++;</span><br><span class="line">            <span class="keyword">if</span>(sam==<span class="number">5</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    cout&lt;&lt;endl;</span><br><span class="line">                    sam=<span class="number">0</span>;  <span class="comment">// 第一次提交忘记 sam 复位为0</span></span><br><span class="line">                &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                cout&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Problem-B-哥德巴赫猜想"><a href="#Problem-B-哥德巴赫猜想" class="headerlink" title="Problem-B  哥德巴赫猜想"></a>Problem-B  哥德巴赫猜想</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">著名的数学家哥德巴赫说：任意不小于<span class="number">6</span>的偶数必定可分解成两个素数之和，例如<span class="number">10</span>＝<span class="number">3</span>+<span class="number">7</span>。请编写</span><br><span class="line">一个程序，对于输入的任意正偶数（不大于<span class="number">100000</span>），将其分解成两个质数的和形式。如果有多种解，</span><br><span class="line">输出第一个加数最小的那个解。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">一个正偶数N（不大于<span class="number">100000</span>）。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">两个质数，它的和为N。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">3</span> <span class="number">7</span></span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">g</span><span class="params">(<span class="keyword">int</span> n)</span>   <span class="comment">// 建议函数取名有意义</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i*i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)   <span class="comment">// 可以优化为, 节省一半计算量: for(int i=3;i&lt;=n;i=i+2)</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">g</span>(i)&amp;&amp;<span class="built_in">g</span>(n-i))</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;i&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;n-i&lt;&lt;endl;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Problem-C-3n-1问题"><a href="#Problem-C-3n-1问题" class="headerlink" title="Problem-C  3n+1问题"></a>Problem-C  3n+1问题</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">考虑如下序列生成算法：从整数n开始，如果n是偶数，把它除以<span class="number">2</span>；如果n是奇数，把它乘<span class="number">3</span>加<span class="number">1</span>。用</span><br><span class="line">新得到的值重复上述步骤，直到n=<span class="number">1</span>时停止。例如，n=<span class="number">22</span>时该算法生成的序列是：<span class="number">22</span>，<span class="number">11</span>，<span class="number">34</span>，<span class="number">17</span>，</span><br><span class="line"><span class="number">52</span>，<span class="number">26</span>，<span class="number">13</span>，<span class="number">40</span>，<span class="number">20</span>，<span class="number">10</span>，<span class="number">5</span> ，<span class="number">16</span>，<span class="number">8</span>，<span class="number">4</span>，<span class="number">2</span>，<span class="number">1</span>。</span><br><span class="line">人们猜想对于任意整数n，该算法总能终止于n=<span class="number">1</span>。这个猜想对于至少<span class="number">1000000</span>内的整数都是正确的。</span><br><span class="line">对于从给定的n，该序列的元素（包括<span class="number">1</span>）个数被称为n的循环节长度。在上述例子中，<span class="number">22</span>的循环节节</span><br><span class="line">长度为<span class="number">16</span>。输入两个数i和j，你的任务是计算i到j（包含i和j）之间的整数中，循环节长度的最大值。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">输入只有一行，包含两个整数i和j。所有整数大于<span class="number">0</span>，小于<span class="number">1000000</span>。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">输出只有一行，且仅有一个整数，为i到j之间整数中最大循环节长度。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">1</span> <span class="number">10</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> i,j,sam,m=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">jg</span><span class="params">(<span class="keyword">int</span> n)</span>  <span class="comment">// 建议函数取名有意义</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    sam=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(n!=<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)</span><br><span class="line">            n=n/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            n=n*<span class="number">3</span>+<span class="number">1</span>;</span><br><span class="line">        sam++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(sam&gt;m)</span><br><span class="line">        m=sam;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;i&gt;&gt;j;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> k=i;k&lt;=j;k++)</span><br><span class="line">        <span class="built_in">jg</span>(k);</span><br><span class="line">    cout&lt;&lt;m&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Problem-D-亲密数对"><a href="#Problem-D-亲密数对" class="headerlink" title="Problem-D  亲密数对"></a>Problem-D  亲密数对</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">亲密数是一对的，如果整数A的全部真约数（包括<span class="number">1</span>，不包括A本身）之和等于另一个数B；且整数B的</span><br><span class="line">全部真约数（包括<span class="number">1</span>，不包括B本身）之和等于A，则将整数A和B称为一对亲密数。 比如<span class="number">220</span>和<span class="number">284</span>，</span><br><span class="line"><span class="number">220</span>的真约数<span class="number">1</span>、<span class="number">2</span>、<span class="number">4</span>、<span class="number">5</span>、<span class="number">10</span>、<span class="number">11</span>、<span class="number">20</span>、<span class="number">22</span>、<span class="number">44</span>、<span class="number">55</span>、<span class="number">110</span>之和等于<span class="number">284</span>，<span class="number">284</span>的真约数<span class="number">1</span>、<span class="number">2</span>、<span class="number">4</span>、</span><br><span class="line"><span class="number">71</span>、<span class="number">142</span>之和等于<span class="number">220</span>。 </span><br><span class="line">编写一个程序求N（<span class="number">1</span>&lt;＝N&lt;=<span class="number">100000</span>)以内的全部亲密数对。 </span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">整数N。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">输出N以内的全部亲密数对，每行一对，小的数在前，大的数在后，两数之间仅有一个空格。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">3000</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">220</span> <span class="number">284</span></span><br><span class="line"><span class="number">1184</span> <span class="number">1210</span></span><br><span class="line"><span class="number">2620</span> <span class="number">2924</span></span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// TODO</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Problem-E-孪生素数"><a href="#Problem-E-孪生素数" class="headerlink" title="Problem-E  孪生素数"></a>Problem-E  孪生素数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">在质数的大家庭中，大小之差不超过<span class="number">2</span>的两个质数称它俩为一对孪生素数，如<span class="number">2</span>和<span class="number">3</span>、<span class="number">3</span>和<span class="number">5</span>、<span class="number">17</span>和<span class="number">19</span></span><br><span class="line">等等。请你统计一下，在不大于自然数N的质数中，孪生素数的对数。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">只有一行，一个自然数N。(N&lt;=<span class="number">100</span> <span class="number">0000</span>)。</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">只有一行，一个整数，表示N以内孪生素数的对数。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> n,prime,tmp,sam=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">p</span><span class="params">(<span class="keyword">int</span> n)</span>   <span class="comment">// 判断的函数建议命名为: bool isXxx(xxx, xxx);</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i*i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n<span class="number">-2</span>;i++) <span class="comment">// 可优化, p(）函数相对耗时, 尽可能有效调用, 节约时间</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">p</span>(i))</span><br><span class="line">        &#123;</span><br><span class="line">            prime=i;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">p</span>(prime+<span class="number">1</span>))</span><br><span class="line">                sam++;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">p</span>(prime+<span class="number">2</span>))</span><br><span class="line">                sam++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">p</span>(n<span class="number">-1</span>)&amp;&amp;<span class="built_in">p</span>(n))</span><br><span class="line">        sam++;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    if(n==3)</span></span><br><span class="line"><span class="comment">        cout&lt;&lt;1&lt;&lt;endl;</span></span><br><span class="line"><span class="comment">    else if(n&lt;=4)</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        cout&lt;&lt;0&lt;&lt;endl;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    else</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        bool pre=false;</span></span><br><span class="line"><span class="comment">        for(int i=3;i&lt;=n;i=i+2)</span></span><br><span class="line"><span class="comment">        &#123;</span></span><br><span class="line"><span class="comment">            if(p(i))</span></span><br><span class="line"><span class="comment">            &#123;</span></span><br><span class="line"><span class="comment">                if(pre)</span></span><br><span class="line"><span class="comment">                    sam++;</span></span><br><span class="line"><span class="comment">                else</span></span><br><span class="line"><span class="comment">                    pre=true;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            else</span></span><br><span class="line"><span class="comment">                pre=false;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        sam++;  // 2 and 3</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    cout&lt;&lt;sam&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Problem-F-可逆素数"><a href="#Problem-F-可逆素数" class="headerlink" title="Problem-F  可逆素数"></a>Problem-F  可逆素数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目描述</span></span><br><span class="line">求a-b之间所有可逆素数。可逆素数是指：一个素数将其各位数字的顺序倒过来构成的反序数也是</span><br><span class="line">素数。例如<span class="number">1009</span>为素数，它的反序数<span class="number">9001</span>也是素数，所以<span class="number">1009</span>是可逆素数。这里我们规定可逆素数</span><br><span class="line">比它的反序数小，即<span class="number">1009</span>是可逆素数，而<span class="number">9001</span>不算可逆素数。 </span><br><span class="line"></span><br><span class="line"><span class="comment">//输入</span></span><br><span class="line">两个整数a,b。这里a,b&lt;=<span class="number">10000</span>，且a&lt;=b.</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">输出a到b之间，所有可逆素数，每行一个。</span><br><span class="line"></span><br><span class="line"><span class="comment">//样例输入</span></span><br><span class="line"><span class="number">10</span> <span class="number">20</span></span><br><span class="line"><span class="comment">//样例输出</span></span><br><span class="line"><span class="number">13</span></span><br><span class="line"><span class="number">17</span></span><br><span class="line"><span class="comment">//提示</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//提交</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// TODO</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://xinchun.wang/20210810/e3ccf7b2ca3b/" data-id="cks77t0tq000gy7sig8gy1bbu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "XinChun"
+        },
+        "headline": "FLS SDF2021 培训02期 第二课",
+        "image": "http://xinchun.wang/images/0811.png",
+        "keywords": "信息学",
+        "genre": "学霸秘籍 信息学",
+        "datePublished": "2021-08-10",
+        "dateCreated": "2021-08-10",
+        "dateModified": "2021-08-11",
+        "url": "http://xinchun.wang/20210810/e3ccf7b2ca3b/",
+        "description": "
+上一节课是复习课, 今天信息课正式步入正轨。主要内容：
+
+老师讲了。。。。。
+老师讲了。。。。
+老师讲了。。。
+老师讲了。。。
+
+Problem-A  2-n之间的所有质数123456789101112131415161718192021222324252627282930313233343536373839404142434445464748//题目描述输入一个整数n（n&lt;=10000)",
+        "wordCount": 1910
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/20210805/d96bdb2b94f8/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">信息学0805</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/20210810/e3ccf7b2ca3b/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/0811.png)" alt="FLS SDF2021 培训02期 第二课" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a></p>
+                            <p class="item-title"><a href="/20210810/e3ccf7b2ca3b/" class="title">FLS SDF2021 培训02期 第二课</a></p>
+                            <p class="item-date"><time datetime="2021-08-10T23:59:59.000Z" itemprop="datePublished">2021-08-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/20210805/d96bdb2b94f8/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a></p>
+                            <p class="item-title"><a href="/20210805/d96bdb2b94f8/" class="title">信息学0805</a></p>
+                            <p class="item-date"><time datetime="2021-08-05T00:03:22.000Z" itemprop="datePublished">2021-08-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/20210804/e4c8615d23d5/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%9C%B0%E7%90%86/">地理</a></p>
+                            <p class="item-title"><a href="/20210804/e4c8615d23d5/" class="title">地理</a></p>
+                            <p class="item-date"><time datetime="2021-08-04T00:48:21.000Z" itemprop="datePublished">2021-08-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/20210804/5b7d83718cbe/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8E%86%E5%8F%B2/">历史</a></p>
+                            <p class="item-title"><a href="/20210804/5b7d83718cbe/" class="title">历史</a></p>
+                            <p class="item-date"><time datetime="2021-08-04T00:48:06.000Z" itemprop="datePublished">2021-08-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/20210804/9986abf2e3a6/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8C%96%E5%AD%A6/">化学</a></p>
+                            <p class="item-title"><a href="/20210804/9986abf2e3a6/" class="title">化学</a></p>
+                            <p class="item-date"><time datetime="2021-08-04T00:44:52.000Z" itemprop="datePublished">2021-08-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/">学霸秘籍</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E4%BF%A1%E6%81%AF%E5%AD%A6/">信息学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8C%96%E5%AD%A6/">化学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%8E%86%E5%8F%B2/">历史</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E5%9C%B0%E7%90%86/">地理</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E7%89%A9%E7%90%86/">物理</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E8%8B%B1%E8%AF%AD/">英语</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E9%9C%B8%E7%A7%98%E7%B1%8D/%E8%AF%AD%E6%96%87/">语文</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">八月 2021</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6/" style="font-size: 20px;">信息学</a> <a href="/tags/%E5%8C%96%E5%AD%A6/" style="font-size: 10px;">化学</a> <a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 10px;">历史</a> <a href="/tags/%E5%9C%B0%E7%90%86/" style="font-size: 10px;">地理</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">数学</a> <a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 10px;">物理</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 10px;">英语</a> <a href="/tags/%E8%AF%AD%E6%96%87/" style="font-size: 10px;">语文</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/福州市屏西小学/10057342">福州市屏西小学</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/福州时代中学/240530">福州时代中学</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2021 XinChun</p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://xinchun.wang/20210810/e3ccf7b2ca3b/';
+    
+    
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
